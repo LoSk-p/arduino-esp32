@@ -97,6 +97,7 @@ set(ARDUINO_ALL_LIBRARIES
   Update
   USB
   WebServer
+  NetworkClientSecure
   WiFi
   Wire
   )
@@ -164,6 +165,10 @@ set(ARDUINO_LIBRARY_WebServer_SRCS
   libraries/WebServer/src/WebServer.cpp
   libraries/WebServer/src/Parsing.cpp
   libraries/WebServer/src/detail/mimetable.cpp)
+
+set(ARDUINO_LIBRARY_NetworkClientSecure_SRCS
+  libraries/NetworkClientSecure/src/ssl_client.cpp
+  libraries/NetworkClientSecure/src/NetworkClientSecure.cpp)
 
 set(ARDUINO_LIBRARY_Network_SRCS
   libraries/Network/src/NetworkInterface.cpp
